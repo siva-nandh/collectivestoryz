@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-theme='dark'>
+
+
+<head>
+    <title>Collective Storyz</title>
+    <link rel="icon" href="src/img/logo.png" sizes="32x32">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/cursor.css" />
+
+    <!-- JavaScript -->
+    <script src="src/js/vendors.js"></script>
+
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="preload-help"></div>
+    <div class="preload-container"></div>
+    <div class="preload-container">
+        <div id="preload-percentage">
+            8%
+        </div>
+        <div id="preload-progress-container">
+            <span class="preload-progress"></span>
+        </div>
+        <div id="pre-nika-logo">
+            <img src="src/img/logo.png" alt="Collective Storyz" title="Collective Storyz">
+        </div>
+    </div>
+    <button class="theme-switch" data-mode="dark">
+        <span class="visually-hidden">Change theme</span>
+
+        <span class="track">
+            <span class="sun">
+                <span class="moon"></span>
+            </span>
+        </span>
+
+        <span class="theme-label" data-text="auto"></span>
+        <span class="theme-label" data-text="light"></span>
+        <span class="theme-label" data-text="dark"></span>
+    </button>
+    <!-- nav Menu -->
+    <nav id="navigationWrap">
+        <div class="MenuOverlayBackground"></div>
+        <div class="nav-container">
+            <div class="header-menu menu-icon">
+                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button" id="closeNavbar">
+                    <div class="cross">
+                        <div class="cross-in left"></div>
+                        <div class="cross-in right"></div>
+                    </div>
+                </button>
+                <div class="header-menu logo mobile-only">
+                    <a href="index.html"><img src="src/img/logo.png" alt="Collective-Storyz"
+                            title="Collective-Storyz" /></a>
+                </div>
+            </div>
+            <nav class="nav-container-left">
+                <div class="header-menu logo desktop-only cursor-active">
+                    <a href="index.html"><img src="src/img/logo.png" alt="Collective-Storyz"
+                            title="Collective-Storyz" /></a>
+                </div>
+                <ul class="main_nav">
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1s">
+                        <a id="home" data-img="" href="index.html">HOME</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.2s">
+                        <a id="works" data-img="" href="works.html">WORK</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.4s">
+                        <a id="about" data-img="" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.6s">
+                        <a id="team" data-img="" href="team.html">TEAM</a>
+                    </li>
+                    <li class="onActive wow fadeInLeft" data-wow-delay="1.8s">
+                        <a id="contacts" data-img="" href="index.html#contactUs">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-container-right">
+                <div class="onActive wow fadeInLeft" data-wow-delay="2.2s">
+                    <p><span>Social</span></p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/Collective-Storyz-109118517926740" target="_blank"><span
+                                    data-hover="Facebook">Facebook</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/collective_storyz/" target="_blank"><span
+                                    data-hover="Instagram">Instagram</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/" target="_blank"><span
+                                    data-hover="LinkedIn">LinkedIn</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCdYPLeoaEbbiBO_NYrF3lYg" target="_blank"><span
+                                    data-hover="Youtube">Youtube</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="onActive wow fadeInLeft" data-wow-delay="2.6s">
+                    <p class="emailMenu"><span>Say Hi!</span></p>
+                    <ul>
+                        <li>
+                            <a class="emailId" href="mailto:mail@gmail.com">mail@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Header -->
+        <section class="panel banner leftMenu">
+            <div class="left-header">
+                <div class="header-section logo">
+                    <a href="index.html" class="scrollToFirst cursor-active"><img src="src/img/logo.png"
+                            alt="Collective Storyz" title="Collective Storyz" /></a>
+                </div>
+                <div class="header-section menu-icon cursor-active">
+                    <button class="menu-open_button" id="openNavbar">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="header-section header-quote">
+                    <img src="src/img/ui/play-button.png" width="20" />
+                    <p>
+                        <a href="javascript:void(0);" class="scrollToContact"><span>Let’s </span><span>do good
+                            </span><span>together!</span></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div data-router-wrapper>
+            <div data-router-view="work" class="work_page">
+                <canvas id="scene"></canvas>
+                <!-- scroll section -->
+                <div class="scroll-area">
+                    <!-- container for all horizontal scroll items -->
+                    <div class="scroll-wrapper">
+                        
+                        <section class="panel sectionProject_news sectionworks_news">
+                            <div class="panel">
+                                <div class="portfolio" id="portfolio">
+                                    <div class="projectTitle">
+                                        <div class="projectTitle_wrap contact-heading">
+                                            <h2>Featured Works</h2>
+                                            <h2>Featured Works</h2>
+                                            <h2>Featured Works</h2>
+                                            <h2>Featured Works</h2>
+                                            <h2>Featured Works</h2>
+                                        </div>
+                                    </div>
+                                    <div class="spacer"></div>
+                                    <div id="portfolioWrap">
+                                        <section class="content | scrollarea-ctn">
+                                            <div class="scrollarea | slideshow">
+                                                <ul class="slideshow-list">
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="recycle-kerala.html">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/proj/recyclekeralacover.png" data-hover="" alt="Rrecycle-Kerala" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        DYFI Election Campaign Ad 2021
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Rrecycle Kerala
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="hridayapoorvam.html">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/proj/hridayapoorvamcover.png" data-hover="" alt="Hridayapoorvam" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        DYFI Election Campaign Ad 2021
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Hridayapoorvam
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt="" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Short description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Title
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt="" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Short description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Title
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt="" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Short description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Title
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt="" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Short description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Title
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt="" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Short description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Title
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt="" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Short description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Title
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt="" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Short description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Title
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                    <li class="slideshow-list__el">
+                                                        <article class="tile | js-tile">
+                                                            <a href="">
+                                                                <figure class="tile__fig">
+                                                                    <img src="src/img/temp/temp.jpg" data-hover="" alt="" class="tile__img" />
+                                                                </figure>
+                                                                <div class="tile__content">
+                                                                    <div class="tile__cta">
+                                                                        Short description
+                                                                    </div>
+                                                                    <h2 class="tile__title | title title--medium">
+                                                                        Title
+                                                                    </h2>
+                                                                </div>
+                                                            </a>
+                                                        </article>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="slideshow__progress-ctn work_progressLine">
+                                                <span class="slideshow__progress"></span>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="projectActions worksArrow">
+                                    <div class="projectActions_wrap">
+                                        <div class="nextSection">
+                                            <div id="q-intro-scroll">
+                                                <a href="javascript:void(0);" class="scrollToContact">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 109.1 83.9" xml:space="preserve" id="drawIt">
+                                                        <polyline class="st0 introArrow" stroke-width="2" fill="none" stroke="white" points="0.5,34.5 0.5,34.5 0.5,49.4 80.2,49.4 46.2,83.4 67.2,83.4 98.1,52.5 108.6,42 98.1,31.5 67.2,0.5   46.2,0.5 80.2,34.5 0.5,34.5 " data-svg-origin="0.5 0.5"></polyline>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    
+
+
+
+                        <section class="panel contactUs" id="contactUs">
+                            <div class="projectTitle">
+                                <div class="projectTitle_wrap contact-heading">
+                                    <h2>LET'S DO GOOD TOGETHER!</h2>
+                                    <h2>LET'S DO GOOD TOGETHER!</h2>
+                                    <h2>LET'S DO GOOD TOGETHER!</h2>
+                                    <h2>LET'S DO GOOD TOGETHER!</h2>
+                                </div>
+                            </div>
+                            <div class="spacer"></div>
+                            <div class="contactWrap">
+                                <div class="contactDetails">
+                                    <iframe class="gmap"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15716.415491818052!2d76.35486241899262!3d10.00827823552669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080b62a7688a1d%3A0xea20f6a86d090450!2sInfopark%20Campus%2C%20Kochi%2C%20Kerala%20682030!5e0!3m2!1sen!2sin!4v1621581107143!5m2!1sen!2sin"
+                                        style="border:0;" allowfullscreen="" loading="lazy" scrolling="yes"></iframe>
+                                </div>
+                                <div class="contactDetails">
+                                    <div>
+                                        <a href="#">Collective Storyz 44/981 <br>South janatha road <br> Palarivattam
+                                            Cochin 25.</a>
+                                    </div>
+                                    <div>
+                                        <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+                                    </div>
+                                    <div>
+                                        <a href="tel:+9919876543210">+91 98765 43210</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="panel">
+                            <div class="nextProject">
+                                <div class="nextProject_spacer"></div>
+                                <a class="nextProject_link" href="index.html"></a>
+                                <div class="nextprojectTitle">
+                                    <div class="nextprojectTitle_wrap">
+                                        <h2>HOME</h2>
+                                        <div class="nextProject_arrow">
+                                            <img src="src/img/ui/nextproarrow.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="contactUs mobile-only">
+                            <div class="copyrights">
+                                <a href="about.html"><span>© Collective Storyz 2021</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="src/js/cursor.js"></script>
+</body>
+
+</html>
