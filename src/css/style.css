@@ -2211,10 +2211,16 @@ hr {
 }
 
 .nextProject {
-  background-color: #fff;
+  background-color: #000;
   position: relative;
+  border-left: 1px solid #161616;
+}
+
+[data-theme=light] .nextProject {
+  background-color: #fff;
   border-left: 1px solid #707070;
 }
+
 
 .nextProject .nextprojectTitle {
   position: absolute;
@@ -2238,6 +2244,10 @@ hr {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  color: #fff;
+}
+
+[data-theme=light] .nextProject .nextprojectTitle_wrap h2 {
   color: #000;
 }
 
@@ -2249,7 +2259,7 @@ hr {
 
 .nextProject .nextProject_arrow {
   display: inline-block;
-  transform: rotate(90deg);
+  transform: rotate(90deg); 
 }
 
 .nextProject .nextProject_arrow img {
