@@ -4408,11 +4408,16 @@ hr {
   transition: background-color 0.3s ease;
 }
 
+@font-face {
+  font-family: Digital;
+  src: url(/src/fonts/digital.ttf);
+}
+
 #preload-percentage {
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Digital";
   font-size: 65px;
   font-weight: 700;
-  color: #fff;
+  color: #182acc;
   line-height: normal;
   margin-bottom: 0px;
   visibility: hidden;
@@ -4437,7 +4442,7 @@ hr {
   height: 1px;
   width: 100%;
   transform: translate(-100%, 0%) matrix(1, 0, 0, 1, 0, 0);
-  background: rgba(255, 255, 255, 0.2);
+  background: #182acc;
   transition: background-color 0.3s ease;
 }
 

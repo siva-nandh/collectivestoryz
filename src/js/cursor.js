@@ -1,6 +1,6 @@
 var cursor = $(".custom-cursor"),
-  follower = $(".cursor-follower"),
-  projvideo = $(".control-vid");
+  follower = $(".cursor-follower");
+
 
 var posX = 0,
   posY = 0,
@@ -42,6 +42,8 @@ $(".cursor-active").on("mouseleave", function () {
   follower.removeClass("active");
 });
 
+
+// projvideo = $(".control-vid");
 // $(".control-vid").on("mouseenter", function () {
 //   projvideo.play();
 //   follower.addClass("active");
