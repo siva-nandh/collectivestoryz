@@ -15,6 +15,19 @@
 
     <!-- JavaScript -->
     <script src="src/js/vendors.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1BZN2T4EW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H1BZN2T4EW');
+    </script>
 
 </head>
 
@@ -52,7 +65,7 @@
         <div class="MenuOverlayBackground"></div>
         <div class="nav-container">
             <div class="header-menu menu-icon">
-                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button" id="closeNavbar">
+                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button cursor-active" id="closeNavbar">
                     <div class="cross">
                         <div class="cross-in left"></div>
                         <div class="cross-in right"></div>
@@ -64,7 +77,7 @@
                 </div>
             </div>
             <nav class="nav-container-left">
-                <div class="header-menu logo desktop-only cursor-active">
+                <div class="header-menu logo desktop-only cursor-active nop">
                     <a href="index.html"><img src="src/img/logo.png" alt="Collective-Storyz"
                             title="Collective-Storyz" /></a>
                 </div>
@@ -87,7 +100,7 @@
                 </ul>
             </nav>
             <div class="nav-container-right">
-                <div class="onActive wow fadeInLeft" data-wow-delay="2.2s">
+                <div class="onActive wow fadeInLeft cursor-active" data-wow-delay="2.2s">
                     <p><span>Social</span></p>
                     <ul>
                         <li>
@@ -99,12 +112,16 @@
                                     data-hover="Instagram">Instagram</span></a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/" target="_blank"><span
+                            <a href="https://www.linkedin.com/in/collectivestoryz/" target="_blank"><span
                                     data-hover="LinkedIn">LinkedIn</span></a>
                         </li>
                         <li>
                             <a href="https://www.youtube.com/channel/UCdYPLeoaEbbiBO_NYrF3lYg" target="_blank"><span
                                     data-hover="Youtube">Youtube</span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.vimeo.com/collectivestoryz" target="_blank"><span
+                                    data-hover="Youtube">Vimeo</span></a>
                         </li>
                     </ul>
                 </div>
@@ -112,7 +129,7 @@
                     <p class="emailMenu"><span>Say Hi!</span></p>
                     <ul>
                         <li>
-                            <a class="emailId" href="mailto:mail@gmail.com">mail@gmail.com</a>
+                            <a class="emailId" href="mailto:contact@collectivestoryz.in">contact@collectivestoryz.in</a>
                         </li>
                     </ul>
                 </div>
@@ -125,15 +142,15 @@
         <section class="panel banner leftMenu">
             <div class="left-header">
                 <div class="header-section logo">
-                    <a href="index.html" class="scrollToFirst cursor-active"><img src="src/img/logo.png"
+                    <a href="index.html" class="scrollToFirst cursor-active nop"><img src="src/img/logo.png"
                             alt="Collective Storyz" title="Collective Storyz" /></a>
                 </div>
-                <div class="header-section menu-icon cursor-active">
-                    <button class="menu-open_button" id="openNavbar">
+                <div class="header-section menu-icon">
+                    <button class="menu-open_button cursor-active" id="openNavbar">
                         <span></span>
                     </button>
                 </div>
-                <div class="header-section header-quote">
+                <div class="header-section header-quote cursor-active">
                     <img src="src/img/ui/play-button.png" width="20" />
                     <p>
                         <a href="javascript:void(0);" class="scrollToContact"><span>Let’s </span><span>do good
@@ -236,7 +253,7 @@
                                                 <ul class="slideshow-list">
                                                     <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a class="nop" href="recycle-kerala.html">
+                                                            <a class="cursor-active nop" href="recycle-kerala.html">
                                                                 <figure class="tile__fig">
                                                                     <img src="src/proj/recyclekeralacover.png"
                                                                         data-hover="" alt="" class="tile__img" />
@@ -254,7 +271,7 @@
                                                     </li>
                                                     <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a class="nop" href="hridayapoorvam.html">
+                                                            <a class="cursor-active nop" href="hridayapoorvam.html">
                                                                 <figure class="tile__fig">
                                                                     <img src="src/proj/hridayapoorvamcover.png"
                                                                         data-hover="" alt="" class="tile__img" />
@@ -272,7 +289,7 @@
                                                     </li>
                                                     <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a class="nop" href="">
+                                                            <a class="cursor-active nop" href="">
                                                                 <figure class="tile__fig">
                                                                     <img src="src/img/temp/temp.jpg" data-hover=""
                                                                         alt="" class="tile__img" />
@@ -290,7 +307,7 @@
                                                     </li>
                                                     <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a class="nop" href="">
+                                                            <a class="cursor-active nop" href="">
                                                                 <figure class="tile__fig">
                                                                     <img src="src/img/temp/temp.jpg" data-hover=""
                                                                         alt="" class="tile__img" />
@@ -423,13 +440,13 @@
                                                     <div class="articleDate">
                                                         Know more
                                                     </div>
-                                                    <a target="_blank" href="team.html"
-                                                        class="read_more">Read More</a>
+                                                    <a target="_blank" href="team.html" class="read_more">Read More</a>
                                                 </li>
                                                 <li class="ar-in-fadeIn seeMore" style="
                                                                 background-color: #0a0a0a;
                                                             ">
-                                                            <a href="https://www.youtube.com/channel/UCdYPLeoaEbbiBO_NYrF3lYg" class=""></a>
+                                                    <a href="https://www.youtube.com/channel/UCdYPLeoaEbbiBO_NYrF3lYg"
+                                                        class=""></a>
                                                     <img src="src/img/temp/youtube.png" width="300" class="see_more">
                                                 </li>
                                             </ul>
@@ -467,7 +484,7 @@
                                             Cochin 25.</a>
                                     </div>
                                     <div>
-                                        <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+                                        <a href="mailto:contact@collectivestoryz.in">contact@collectivestoryz.in</a>
                                     </div>
                                     <div>
                                         <a href="tel:+9919876543210">+91 98765 43210</a>
