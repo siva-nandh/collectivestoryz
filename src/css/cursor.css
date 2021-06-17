@@ -11,6 +11,8 @@
         z-index: 9999;
         opacity: 100%;
         mix-blend-mode: difference;
+        transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+			0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
     }
 
     .custom-cursor::before,
@@ -42,7 +44,7 @@
         height: 60px;
         border-radius: 100%;
         z-index: 9998;
-        opacity: 100%;
+        opacity: 1;
         transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
             0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
         user-select: none;
@@ -55,8 +57,20 @@
         cursor: unset;
     }
 
+    .custom-cursor.active {
+        mix-blend-mode: hard-light;
+
+    }
+
+    .custom-cursor.active::before,
+    .custom-cursor.active::after {
+     background: #182acc;
+
+    }
+
     .cursor-follower.active {
-        opacity: 0%;
+        transform: scale(0);
+        opacity: 0.3;
     }   
 }
 

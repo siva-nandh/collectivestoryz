@@ -30,25 +30,16 @@ TweenMax.to({}, 0.016, {
 });
 
 $(document).on("mousemove", function (e) {
-  mouseX = e.pageX;
-  mouseY = e.pageY;
+  mouseX = e.clientX;
+  mouseY = e.clientY;
 });
 
 $(".cursor-active").on("mouseenter", function () {
+  cursor.addClass("active");
   follower.addClass("active");
 });
 
 $(".cursor-active").on("mouseleave", function () {
+  cursor.removeClass("active");
   follower.removeClass("active");
 });
-
-
-// projvideo = $(".control-vid");
-// $(".control-vid").on("mouseenter", function () {
-//   projvideo.play();
-//   follower.addClass("active");
-// });
-// $(".control-vid").on("mouseleave", function () {
-//   projvideo.pause();
-//   follower.removeClass("active");
-// });
