@@ -2579,7 +2579,7 @@ hr {
   z-index: 9;
 }
 
-.circle:before {
+/* .circle:before {
   content: "";
   position: absolute;
   left: -150px;
@@ -2595,7 +2595,7 @@ hr {
 
 [data-theme=light] .circle:before {
   border: 1px solid #ccc;
-}
+} */
 
 .ourStrength_wrap h4 {
   color: #fff;
