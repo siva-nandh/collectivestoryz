@@ -649,7 +649,7 @@ hr {
 
 .nav-container-left {
   position: relative;
-  width: calc(50% - 220px);
+  width: calc(55% - 220px);
   height: 100%;
   display: flex;
   align-items: center;
@@ -3402,7 +3402,7 @@ hr {
   }
 
   .nav-container-left {
-    width: calc(50% - 150px);
+    width: calc(65% - 150px);
     margin-left: 150px;
   }
 
@@ -3485,7 +3485,7 @@ hr {
   }
 
   .nav-container-left {
-    width: calc(50% - 150px);
+    width: calc(55% - 150px);
     margin-left: 20px;
   }
 
