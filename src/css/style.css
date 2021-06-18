@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Digital";
-  src: url(/src/fonts/digital.ttf);
+  src: url(../../src/fonts/digital.ttf);
 }
 
 html,
