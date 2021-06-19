@@ -1,9 +1,11 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&amp;display=swap);
+
 @font-face {
   font-family: "Helvetica";
-  src: url(../../src/fonts/helvetica.woff),url(../../src/fonts/helvetica.ttf);
+  src: url(../../src/fonts/helvetica.woff), url(../../src/fonts/helvetica.ttf);
 }
+
 @font-face {
   font-family: "Digital";
   src: url(../../src/fonts/digital.woff2), url(../../src/fonts/digital.woff), url(../../src/fonts/digital.ttf);
@@ -103,7 +105,7 @@ video {
 }
 
 
-.helvetica{
+.helvetica {
   font-family: "Helvetica";
 }
 
@@ -713,6 +715,7 @@ hr {
   line-height: 90px;
   display: inline-block;
 }
+
 
 .nav-container-left ul li a:hover {
   color: rgba(0, 0, 0, 0);
@@ -3176,6 +3179,9 @@ hr {
 
 @media(max-width: 420px) {
   .videosize {
+    position: absolute;
+    top: 100%;
+    left: 220%;
     margin: 0 auto;
   }
 
@@ -3447,7 +3453,7 @@ hr {
 
   .nav-container-left ul li a {
     line-height: 60px;
-    font-size: 70px;
+    font-size: 65px;
   }
 
   .nav-container-right {
@@ -3506,7 +3512,7 @@ hr {
 .nav-container-left {
   margin-left: 50px;
 }
-}
+
 
 @media (max-width: 991px) {
   .introContent {
@@ -3666,6 +3672,7 @@ hr {
   .introContent {
     padding: 45px 20px;
     width: 100%;
+    height: 70vh;
   }
 
   .introContent .introContentWrap {
@@ -3675,7 +3682,7 @@ hr {
   .introContent .introContentWrap .introMainContent {
     position: static;
     transform: none;
-    margin: 40px 0 40px;
+    margin: 150px 0 40px;
     display: inline-block;
   }
 
@@ -4939,5 +4946,19 @@ hr {
     background-size: contain;
     width: 30px;
     height: 30px;
+  }
+}
+
+@media screen and (max-width: 965px) and (min-width: 767px) {
+  .introContent {
+    width: 120vw;
+  }
+
+}
+
+@media screen and (max-width: 342px) {
+  .nav-container-left ul li a {
+    font-size: 40px;
+    line-height: 45px;
   }
 }
