@@ -4555,9 +4555,9 @@ hr {
 
 
 #preload-percentage {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 65px;
-  font-weight: 700;
+  font-family: "Digital";
+  font-size: 60px;
+  font-weight: 500;
   color: #182acc;
   line-height: normal;
   margin-bottom: 0px;
@@ -4948,8 +4948,8 @@ hr {
     height: 30px;
   }
   #preload-percentage {
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 400;
   }
 }
 
