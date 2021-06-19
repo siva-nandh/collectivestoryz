@@ -3180,7 +3180,7 @@ hr {
 @media(max-width: 420px) {
   .videosize {
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 220%;
     margin: 0 auto;
   }
