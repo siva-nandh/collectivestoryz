@@ -4947,6 +4947,10 @@ hr {
     width: 30px;
     height: 30px;
   }
+  #preload-percentage {
+    font-size: 40px;
+    font-weight: 600;
+  }
 }
 
 @media screen and (max-width: 965px) and (min-width: 767px) {
