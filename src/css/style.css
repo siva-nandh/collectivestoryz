@@ -4555,7 +4555,7 @@ hr {
 
 
 #preload-percentage {
-  font-family: "Digital";
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 65px;
   font-weight: 700;
   color: #182acc;
@@ -4960,5 +4960,11 @@ hr {
   .nav-container-left ul li a {
     font-size: 40px;
     line-height: 45px;
+  }
+}
+
+@media screen and (min-width: 767px){
+  .lastcontact{
+    text-align-last: end;
   }
 }
