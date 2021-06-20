@@ -1899,9 +1899,9 @@
                     key: "onChangeImage",
                     value: function () {
                         var t = this;
-                        this.images = [], this.lightImages = [], this.scene.mainScene.remove(this.mesh), "dark" !== e(".theme-switch").attr("data-mode") && "dark" !== window.localStorage.getItem("theme") || this.preload([this.mainImage.src, this.mainImage.dataset.hover, "./dist/img/shape.jpg"], this.images, (function () {
+                        this.images = [], this.lightImages = [], this.scene.mainScene.remove(this.mesh), "dark" !== e(".theme-switch").attr("data-mode") && "dark" !== window.localStorage.getItem("theme") || this.preload([this.mainImage.src, this.mainImage.dataset.hover, ""], this.images, (function () {
                             t.initTile(t.images)
-                        })), "light" !== e(".theme-switch").attr("data-mode") && "light" !== window.localStorage.getItem("theme") || this.preload([this.mainImage.src.replace("img", "lightImg"), this.mainImage.dataset.hover.replace("img", "lightImg"), "./dist/img/shape.jpg"], this.lightImages, (function () {
+                        })), "light" !== e(".theme-switch").attr("data-mode") && "light" !== window.localStorage.getItem("theme") || this.preload([this.mainImage.src.replace("img", "lightImg"), this.mainImage.dataset.hover.replace("img", "lightImg"), ""], this.lightImages, (function () {
                             t.initTile(t.lightImages)
                         }))
                     }
