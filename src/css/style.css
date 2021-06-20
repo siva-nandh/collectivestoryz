@@ -735,7 +735,7 @@ hr {
   content: "";
   width: 35px;
   height: 35px;
-  background-image: url(img/emoji.png);
+  background-image: url(/src/img/ui/smallplay.png);
   display: block;
   position: absolute;
   top: 0;
@@ -866,9 +866,9 @@ hr {
 }
 
 .nav-container-right p {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .nav-container-right p span {
@@ -889,9 +889,9 @@ hr {
   width: 19px;
   display: block;
   position: absolute;
-  background: url(img/header-flower-icon.png);
+  background: url(/src/img/ui/header-play-icon.png);
   left: -30px;
-  top: 0;
+  top: 7px;
   background-repeat: no-repeat;
 }
 
@@ -945,6 +945,7 @@ hr {
 
 .socialLinks li a:hover,
 .nav-container-right ul li a:hover {
+  color: #182acc;
   opacity: 1;
 }
 
@@ -1008,7 +1009,7 @@ hr {
   height: 1px;
   content: "";
   position: absolute;
-  background: #929292;
+  background: #182acc;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.4s ease-out;
@@ -1171,7 +1172,7 @@ hr {
   cursor: pointer;
 }
 
-.emoji_icon {
+/* .emoji_icon {
   position: relative;
 }
 
@@ -1179,7 +1180,7 @@ hr {
   content: "";
   width: 35px;
   height: 35px;
-  background-image: url(img/emoji.png);
+  background-image: url(/src/img/ui/emoji.png);
   display: block;
   position: absolute;
   bottom: 65%;
@@ -1195,7 +1196,7 @@ hr {
   position: absolute;
   bottom: 65%;
   left: 100%;
-}
+} */
 
 .skipContent {
   position: absolute;
@@ -1283,7 +1284,7 @@ hr {
   position: absolute;
   width: 100%;
   height: 275px;
-  background-image: url(img/line.png);
+  background-image: url(/src/img/ui/line.png);
   bottom: -20%;
   left: 0;
   background-position: -500px 0px;
@@ -1302,7 +1303,7 @@ hr {
   position: absolute;
   width: 99%;
   height: 275px;
-  background-image: url(img/line.png);
+  background-image: url(/src/img/ui/line.png);
   bottom: 13%;
   left: 0;
   background-position: -500px 0px;
@@ -1888,6 +1889,20 @@ hr {
   background: #fff;
 }
 
+/* .aboutProject::before {
+  content: "";
+  position: absolute;
+  left: -108px;
+  top: -6%;
+  background: rgba(0, 0, 0, 0);
+  width: 350px;
+  height: 350px;
+  border-radius: 320px;
+  border: 1px solid #dad9dc;
+  opacity: 0.1;
+  transition: border 0.3s ease;
+} */
+
 .aboutProject_wrap {
   display: flex;
   position: relative;
@@ -2200,7 +2215,7 @@ hr {
 }
 
 .usedinProject {
-  padding: 0 70px 0 200px;
+  padding: 0 70px 0 -100px;
   background-color: #191919;
 }
 
@@ -2673,7 +2688,7 @@ hr {
 
 .ourStrength_blk:before {
   content: "";
-  background-image: url(img/Path-18.png);
+  background-image: url(/src/img/ui/Path-18.png);
   position: absolute;
   width: 986px;
   height: 441px;
@@ -2681,18 +2696,18 @@ hr {
   background-size: cover;
   left: -26%;
   background-position: left;
-  top: -15%;
+  top: -40%;
 }
 
 .ourStrength_blk:after {
   content: "";
-  background-image: url(img/Path-20.png);
+  background-image: url(/src/img/ui/Path-20.png);
   position: absolute;
   width: 650px;
   height: 441px;
   background-repeat: no-repeat;
   background-size: contain;
-  left: 0;
+  left: -200px;
   background-position: left;
   top: 83%;
 }
@@ -2715,7 +2730,7 @@ hr {
 
 .services_blk:before {
   content: "";
-  background-image: url(img/Path-18.png);
+  background-image: url(/src/img/ui/Path-18.png);
   position: absolute;
   width: 1092px;
   height: 488px;
@@ -2723,12 +2738,12 @@ hr {
   background-size: cover;
   left: -18%;
   background-position: left;
-  top: -15%;
+  top: -50%;
 }
 
 .services_blk:after {
   content: "";
-  background-image: url(img/Path-20.png);
+  background-image: url(/src/img/ui/Path-20.png);
   position: absolute;
   width: 548px;
   height: 545px;
@@ -2947,9 +2962,9 @@ hr {
   line-height: 65px;
 }
 
-.behindNika:after {
+/* .behindNika:after {
   content: "";
-  background-image: url(img/Path-20.png);
+  background-image: url(/src/img/ui/Path-20.png);
   position: absolute;
   width: 548px;
   height: 545px;
@@ -2957,9 +2972,9 @@ hr {
   background-size: cover;
   right: 25%;
   background-position: left;
-  top: -34%;
+  top: -70%;
   transform: rotate(160deg);
-}
+} */
 
 .behindNika .aboutCom_wrap {
   position: relative;
@@ -3070,7 +3085,7 @@ hr {
 
 .abtcontactUs.contactUs:after {
   content: "";
-  background-image: url(img/Path-18.png);
+  background-image: url(/src/img/ui/Path-18.png);
   position: absolute;
   width: 986px;
   height: 441px;
@@ -3536,7 +3551,7 @@ hr {
 
   .nav-container-left ul li a {
     line-height: 43px;
-    font-size: 40px;
+    font-size: 55px;
   }
 
   .nav-container-right {
@@ -4947,6 +4962,7 @@ hr {
     width: 30px;
     height: 30px;
   }
+
   #preload-percentage {
     font-size: 50px;
     font-weight: 400;
@@ -4967,8 +4983,23 @@ hr {
   }
 }
 
-@media screen and (min-width: 767px){
-  .lastcontact{
+@media screen and (min-width: 767px) {
+  .lastcontact {
     text-align-last: end;
+  }
+
+  .header-section.logo img {
+    max-width: 90px;
+  }
+
+  .header-section.logo {
+    top: 50px;
+  }
+
+  /* .header-section{
+    padding: none;
+  } */
+  .hspadding {
+    padding: 0 0;
   }
 }
