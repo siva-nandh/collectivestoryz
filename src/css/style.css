@@ -4882,6 +4882,16 @@ hr {
   .sectionProject_thoughts .article_inner {
     padding-right: 0px;
   }
+
+  .teamdec{
+    display: none;
+  }
+  .teamdec2{
+    display: none;
+  }
+  .teamdec3{
+    display: none;
+  }
 }
 
 @media(max-width: 420px) {
