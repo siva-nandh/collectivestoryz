@@ -1179,7 +1179,7 @@ hr {
 }
 
 .skipContent a {
-  color: #929292;
+  color: #182acc;
   transition: 0.2s;
   font-size: 16px;
   margin: 0;
@@ -1190,7 +1190,7 @@ hr {
 }
 
 [data-theme=light] .skipContent a {
-  color: #000;
+  color: #182acc;
 }
 
 [data-theme=light] .skipContent .st0 {
@@ -1214,7 +1214,7 @@ hr {
 }
 
 .st0 {
-  stroke: #929292;
+  stroke: #182acc;
 }
 
 #first {
@@ -3106,7 +3106,7 @@ hr {
 }
 
 [data-theme=light] #q-intro-scroll svg .st0 {
-  stroke: #000;
+  stroke: #182acc;
 }
 
 .gmap {

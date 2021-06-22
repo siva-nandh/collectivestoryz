@@ -18,5 +18,3 @@ $(".cursor-active").on("mouseleave", function () {
   cursorr.removeClass("active");
   followerr.removeClass("active");
 });
-
-
