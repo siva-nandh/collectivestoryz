@@ -1756,7 +1756,7 @@ hr {
   border: 1px solid #000;
 }
 
-.contactUs:after {
+/* .contactUs:after {
   content: "";
   position: absolute;
   right: -15%;
@@ -1768,11 +1768,11 @@ hr {
   border: 1px solid #dad9dc;
   opacity: 0.1;
   transition: border 0.3s ease;
-}
+} */
 
-[data-theme=light] .contactUs:after {
+/* [data-theme=light] .contactUs:after {
   border: 1px solid #000;
-}
+} */
 
 .copyrights {
   margin-top: 30px;
