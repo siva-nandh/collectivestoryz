@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Open Sans:400,600,800");
+
+.profile-card-2 {
+  min-width: 300px;
+  max-width: 300px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.profile-card-2 img {
+  transition: all linear 0.25s;
+}
+
+.responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-card-2 .profile-name {
+  font-family: "Open Sans";
+  position: absolute;
+  left: 30px;
+  bottom: 70px;
+  line-height: 1;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-username {
+  font-family: "Open Sans";
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  color: #fff;
+  font-size: 13px;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-dscrptn {
+  opacity: 0;
+  font-family: "Open Sans";
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+  color: #fff;
+  font-size: 13px;
+  transition: all linear 0.25s;
+}
+
+.profile-card-2:hover img {
+  filter: grayscale(100%);
+}
+
+.profile-card-2:hover .profile-name {
+  bottom: 200px;
+}
+
+.profile-card-2:hover .profile-username {
+  bottom: 180px;
+}
+
+.profile-card-2:hover .profile-dscrptn {
+  opacity: 1;
+}
