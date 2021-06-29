@@ -2271,7 +2271,7 @@ hr {
   /* display: inline-block;
   width: calc(50% - 2px); */
   vertical-align: top;
-  padding: 0 20px;
+  padding: 0 -20px;
 }
 
 .useIn_adv .useIn_adv_list .useIn_adv_number {
@@ -4881,6 +4881,14 @@ hr {
 }
 
 @media(max-width: 767px) {
+
+  .ourStrength {
+    max-width: 91vw;
+  }
+  .abtintroblk{
+    width: 90vw;
+  }
+
   .sectionProject_thoughts .article_inner {
     padding-right: 0px;
   }

@@ -53,11 +53,6 @@
         mix-blend-mode: difference;
     }
 
-
-    .nop {
-        cursor: unset;
-    }
-
     .custom-cursor.active {
         mix-blend-mode: hard-light;
 
