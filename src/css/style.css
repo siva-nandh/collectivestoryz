@@ -1385,7 +1385,7 @@ hr {
 .slideshow-list__el {
   width: 100%;
   min-width: 261px;
-  max-width: 35vmin;
+  /* max-width: 35vw; */
   margin-left: 7vw;
 }
 
@@ -3131,7 +3131,7 @@ hr {
   align-items: center;
   padding: 30px 50px;
   position: absolute;
-  max-width: 90vw;
+  max-width: 100vw;
   bottom: -65px;
   left: 0;
   margin: 0 -40px;
@@ -3567,6 +3567,11 @@ hr {
 }
 
 @media (max-width: 767px) {
+  .gmap {
+    height: 50vh;
+    width: 91vw;
+  }
+  
   .introMainContent h2 div {
     font-size: 34px;
     line-height: 40px;
@@ -4846,6 +4851,11 @@ hr {
 }
 
 @media(max-width: 420px) {
+
+  .slideshow-list__el .tile__fig img{
+    width: 90vw;
+  }
+
   .introMainContent h2 div {
     font-size: 30px;
     line-height: 34px;
