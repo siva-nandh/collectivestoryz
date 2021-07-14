@@ -853,7 +853,7 @@ hr {
 .nav-container-right ul li a {
   font-size: 22px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.4;
 }
 
 [data-theme=light] .nav-container-right ul li a {
@@ -4966,14 +4966,15 @@ hr {
 
 .profile-card-2:hover img {
   filter: grayscale(100%);
+  -webkit-filter: brightness(50%);
 }
 
 .profile-card-2:hover .profile-name {
-  bottom: 200px;
+  bottom: 330px;
 }
 
 .profile-card-2:hover .profile-username {
-  bottom: 180px;
+  bottom: 310px;
 }
 
 .profile-card-2:hover .profile-dscrptn {
