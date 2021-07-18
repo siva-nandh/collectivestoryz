@@ -4,6 +4,7 @@
 
 <head>
     <title>Collective Storyz | Marketing and Advertising Production Company</title>
+    <link rel="icon" href="src/img/logo.png" sizes="32x32">
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -11,31 +12,13 @@
     strive to bring a story to its best version by racking up collective
     ideas from numerous creative minds.">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="src/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="src/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="src/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="src/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="src/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="src/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="src/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="src/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="src/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="src/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
-    <link rel="manifest" href="src/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="src/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
     <!-- StyleSheet -->
     <link rel="stylesheet" type="text/css" href="src/css/style.css" />
     <link rel="stylesheet" type="text/css" href="src/css/cursor.css" />
 
     <!-- JavaScript -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="src/js/vendors.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1BZN2T4EW"></script>
@@ -54,7 +37,7 @@
 
 <body>
     <div class="custom-cursor"></div>
-    <div class="cursor-follower"></div>
+
     <div class="preload-help"></div>
     <div class="preload-container"></div>
     <div class="preload-container">
@@ -68,7 +51,7 @@
             <img src="src/img/logo.png" alt="Collective Storyz" title="Collective Storyz">
         </div>
     </div>
-    <button class="theme-switch cursor-active nop" data-mode="dark">
+    <button class="theme-switch cursor-active " data-mode="dark">
         <span class="visually-hidden">Change theme</span>
 
         <span class="track">
@@ -86,7 +69,7 @@
         <div class="MenuOverlayBackground"></div>
         <div class="nav-container">
             <div class="header-menu menu-icon">
-                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button cursor-active nop"
+                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button cursor-active "
                     id="closeNavbar">
                     <div class="cross">
                         <div class="cross-in left"></div>
@@ -99,24 +82,24 @@
                 </div>
             </div>
             <nav class="nav-container-left">
-                <div class="header-menu logo desktop-only cursor-active nop">
+                <div class="header-menu logo desktop-only cursor-active ">
                     <a href="index.html"><img src="src/img/logo.png" alt="Collective-Storyz"
                             title="Collective-Storyz" /></a>
                 </div>
                 <ul class="main_nav">
-                    <li class="onActive wow fadeInLeft" data-wow-delay="1s">
+                    <li class="onActive wow fadeInLeft cursor-active " data-wow-delay="1s">
                         <a id="home" data-img="" href="index.html">HOME</a>
                     </li>
-                    <li class="onActive wow fadeInLeft" data-wow-delay="1.2s">
+                    <li class="onActive wow fadeInLeft cursor-active " data-wow-delay="1.2s">
                         <a id="works" data-img="" href="works.html">WORK</a>
                     </li>
-                    <li class="onActive wow fadeInLeft" data-wow-delay="1.4s">
-                        <a id="about" data-img="" href="about.html">KNOW US</a>
+                    <li class="onActive wow fadeInLeft cursor-active " data-wow-delay="1.4s">
+                        <a id="about" data-img="" href="know-us.html">KNOW US</a>
                     </li>
-                    <li class="onActive wow fadeInLeft" data-wow-delay="1.6s">
+                    <li class="onActive wow fadeInLeft cursor-active " data-wow-delay="1.6s">
                         <a id="team" data-img="" href="team.html">TEAM</a>
                     </li>
-                    <li class="onActive wow fadeInLeft" data-wow-delay="1.8s">
+                    <li class="onActive wow fadeInLeft cursor-active " data-wow-delay="1.8s">
                         <a id="contacts" data-img="" href="index.html#contactUs">CONTACT</a>
                     </li>
                 </ul>
@@ -151,10 +134,10 @@
                     <p class="emailMenu"><span>Say Hi!</span></p>
                     <ul>
                         <li>
-                            <a class="emailId cursor-active nop"
+                            <a class="emailId cursor-active "
                                 href="mailto:contact@collectivestoryz.in">contact@collectivestoryz.in</a>
                             <br>
-                            <a class="emailId cursor-active nop" href="tel:+919876543210">+91 9876543210</a>
+                            <a class="emailId cursor-active " href="tel:+919876543210">+91 9876543210</a>
                         </li>
                     </ul>
                 </div>
@@ -167,7 +150,7 @@
         <section class="panel banner leftMenu">
             <div class="left-header">
                 <div class="header-section hspadding logo">
-                    <a href="index.html" class="scrollToFirst cursor-active nop"><img src="src/img/logo.png"
+                    <a href="index.html" class="scrollToFirst cursor-active "><img src="src/img/logo.png"
                             alt="Collective Storyz" title="Collective Storyz" /></a>
                 </div>
                 <div class="header-section menu-icon">
@@ -178,7 +161,7 @@
                 <div class="header-section header-quote">
                     <img src="src/img/ui/play-button.png" width="20" />
                     <p>
-                        <a href="javascript:void(0);" class="scrollToContact cursor-active nop"><span>Let’s
+                        <a href="javascript:void(0);" class="scrollToContact cursor-active "><span>Let’s
                             </span><span>do good
                             </span><span>together!</span></a>
                     </p>
@@ -203,17 +186,14 @@
                                     <!-- The video -->
                                     <video autoplay muted loop id="homeVideo" class="introvContent">
 
+                                        <source src="src/video/covervideo.webm" type="video/webm">
                                         <source src="src/video/covervideo.mp4" type="video/mp4">
-                                        <!-- <source src="src/video/covervideo.webm" type="video/webm"> -->
 
                                     </video>
                                 </div>
                                 <div class="introContentWrap">
                                     <div class="introMainContent active-mouse">
-                                        <h2 class="we-design-build-head">
 
-
-                                        </h2>
                                         <h2 class="brand-website-head">
                                             <div class="fadeInUp">
                                                 “Great stories
@@ -241,7 +221,7 @@
                                                 </polyline>
                                             </svg>
                                         </div>
-                                        <a href="javascript:void(0);" class="scrollTo cursor-active nop">Scroll</a>
+                                        <a href="javascript:void(0);" class="scrollTo cursor-active ">Scroll</a>
                                     </div>
                                 </div>
                             </div>
@@ -261,9 +241,9 @@
                                                 <ul class="slideshow-list">
                                                     <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a class="cursor-active nop" href="recycle-kerala.html">
+                                                            <a class="cursor-active " href="recycle-kerala.html">
                                                                 <figure class="tile__fig">
-                                                                    <img src="src/proj/recyclekeralacoverp.webp"
+                                                                    <img src="src/proj/recycle.png"
                                                                         onerror=this.src="src/proj/recyclekeralacoverp.jpg"
                                                                         data-hover="" alt="Recycle Kerala"
                                                                         class="tile__img" />
@@ -281,11 +261,12 @@
                                                     </li>
                                                     <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a class="cursor-active nop" href="hridayapoorvam.html">
+                                                            <a class="cursor-active " href="hridayapoorvam.html">
                                                                 <figure class="tile__fig">
-                                                                    <img src="src/proj/hridayapoorvamcoverp.webp"
+                                                                    <img src="src/proj/hp.png"
                                                                         onerror=this.src="src/proj/hridayapoorvamcoverp.jpg"
-                                                                        data-hover="" alt="" class="tile__img" />
+                                                                        data-hover="" alt="Hridayapoorvam"
+                                                                        class="tile__img" />
                                                                 </figure>
                                                                 <div class="tile__content">
                                                                     <div class="tile__cta">
@@ -298,45 +279,10 @@
                                                             </a>
                                                         </article>
                                                     </li>
-                                                    <li class="slideshow-list__el">
+                                                    
+                                                    <!-- <li class="slideshow-list__el">
                                                         <article class="tile | js-tile">
-                                                            <a class="cursor-active nop" href="">
-                                                                <figure class="tile__fig">
-                                                                    <img src="src/img/temp/comingsoon.jpg" data-hover=""
-                                                                        alt="" class="tile__img" />
-                                                                </figure>
-                                                                <div class="tile__content">
-                                                                    <div class="tile__cta">
-                                                                        coming soon
-                                                                    </div>
-                                                                    <h2 class="tile__title | title title--medium">
-                                                                        COMIN SOON
-                                                                    </h2>
-                                                                </div>
-                                                            </a>
-                                                        </article>
-                                                    </li>
-                                                    <li class="slideshow-list__el">
-                                                        <article class="tile | js-tile">
-                                                            <a class="cursor-active nop" href="">
-                                                                <figure class="tile__fig">
-                                                                    <img src="src/img/temp/comingsoon.jpg" data-hover=""
-                                                                        alt="" class="tile__img" />
-                                                                </figure>
-                                                                <div class="tile__content">
-                                                                    <div class="tile__cta">
-                                                                        coming soon
-                                                                    </div>
-                                                                    <h2 class="tile__title | title title--medium">
-                                                                        COMING SOON
-                                                                    </h2>
-                                                                </div>
-                                                            </a>
-                                                        </article>
-                                                    </li>
-                                                    <li class="slideshow-list__el">
-                                                        <article class="tile | js-tile">
-                                                            <a class="nop" href="works.html">
+                                                            <a class="cursor-active " href="works.html">
                                                                 <figure class="tile__fig">
                                                                     <img src="src/img/ui/seemore.jpg" data-hover=""
                                                                         alt="" class="tile__img" />
@@ -344,7 +290,7 @@
 
                                                             </a>
                                                         </article>
-                                                    </li>
+                                                    </li> -->
                                                 </ul>
                                             </div>
                                             <div class="slideshow__progress-ctn work_progressLine">
@@ -370,11 +316,11 @@
                                                 <li class="ar-in-fadeIn whiteTxt" style="
                                                                 background-color: #0a0a0a;
                                                             ">
-                                                    <h5>ABOUT US</h5>
+                                                    <h5>KNOW US</h5>
                                                     <h4>
                                                         <span>
-                                                            <a class="helvetica cursor-active nop"
-                                                                href="about.html">“Create with
+                                                            <a class="cairo cursor-active "
+                                                                href="know-us.html">“Create with
                                                                 the heart build with the mind”</a>
                                                         </span>
 
@@ -382,7 +328,7 @@
                                                     <div class="articleDate">
                                                         Know more
                                                     </div>
-                                                    <a href="about.html" class="read_more cursor-active nop">Read
+                                                    <a href="know-us.html" class="read_more cursor-active ">Read
                                                         More</a>
                                                 </li>
                                                 <li class="ar-in-fadeIn whiteTxt" style="
@@ -391,7 +337,7 @@
                                                     <h5>FOUNDERS</h5>
                                                     <h4>
                                                         <span>
-                                                            <a class="helvetica cursor-active nop"
+                                                            <a class="cairo cursor-active "
                                                                 href="founders.html">“Great
                                                                 stories happen to those who can tell them”</a>
                                                         </span>
@@ -403,7 +349,7 @@
                                                     <div class="articleDate">
                                                         Know more
                                                     </div>
-                                                    <a href="founders.html" class="read_more cursor-active nop">Read
+                                                    <a href="founders.html" class="read_more cursor-active ">Read
                                                         More</a>
                                                 </li>
                                             </ul>
@@ -416,7 +362,7 @@
                                                     <h5>OUR TEAM</h5>
                                                     <h4>
                                                         <span>
-                                                            <a class="helvetica cursor-active nop" href="team.html">“In
+                                                            <a class="cairo cursor-active " href="team.html">“In
                                                                 great
                                                                 teams conflict becomes productive”</a>
                                                         </span>
@@ -425,7 +371,7 @@
                                                     <div class="articleDate">
                                                         Know more
                                                     </div>
-                                                    <a href="team.html" class="read_more cursor-active nop">Read
+                                                    <a href="team.html" class="read_more cursor-active ">Read
                                                         More</a>
                                                 </li>
                                                 <li class="ar-in-fadeIn seeMore" style="
@@ -435,23 +381,23 @@
 
                                                     <div class="socialiconsli">
 
-                                                        <a target="_blank" class="cursor-active nop"
+                                                        <a target="_blank" class="cursor-active "
                                                             href="https://www.facebook.com/Collective-Storyz-109118517926740"><img
                                                                 src="src/img/icons/facebook.svg" alt="Facebook"
                                                                 title="Facebook"></a>
-                                                        <a target="_blank" class="cursor-active nop"
+                                                        <a target="_blank" class="cursor-active "
                                                             href="https://www.instagram.com/collective_storyz/"><img
                                                                 src="src/img/icons/instagram.svg" alt="Instagram"
                                                                 title="Instagram"></a>
-                                                        <a target="_blank" class="cursor-active nop"
+                                                        <a target="_blank" class="cursor-active "
                                                             href="https://www.linkedin.com/in/collectivestoryz/"><img
                                                                 src="src/img/icons/linkedin.svg" alt="LinkedIn"
                                                                 title="LinkedIn"></a>
-                                                        <a target="_blank" class="cursor-active nop"
+                                                        <a target="_blank" class="cursor-active "
                                                             href="https://www.youtube.com/channel/UCdYPLeoaEbbiBO_NYrF3lYg"><img
                                                                 src="src/img/icons/youtube.svg" alt="YouTube"
                                                                 title="YouTube"></a>
-                                                        <a target="_blank" class="cursor-active nop"
+                                                        <a target="_blank" class="cursor-active "
                                                             href="https://www.vimeo.com/collectivestoryz"><img
                                                                 src="src/img/icons/vimeo.svg" alt="Vimeo"
                                                                 title="Vimeo"></a>
@@ -483,25 +429,25 @@
                                 </div>
                                 <div class="contactDetails">
                                     <div>
-                                        <a class="cursor-active nop" href="#">Collective Storyz 44/981 <br>South janatha
+                                        <a class="cursor-active " href="#">Collective Storyz 44/981 <br>South janatha
                                             road <br> Palarivattam
                                             Cochin 25.</a>
                                     </div>
 
                                     <div class="lastcontact">
-                                        <a class="cursor-active nop"
+                                        <a class="cursor-active "
                                             href="mailto:contact@collectivestoryz.in">contact@collectivestoryz.in</a>
                                         <br>
-                                        <a class="cursor-active nop" href="tel:+9919876543210">Tel: 0432 9876543</a>
+                                        <a class="cursor-active " href="tel:+9919876543210">Tel: 0432 9876543</a>
                                         <br>
-                                        <a class="cursor-active nop" href="tel:+9919876543210">Mob: +91 98765 43210</a>
+                                        <a class="cursor-active " href="tel:+9919876543210">Mob: +91 98765 43210</a>
                                     </div>
                                 </div>
                             </div>
                         </section>
                         <div class="contactUs mobile-only">
                             <div class="copyrights">
-                                <a href="about.html"><span>© Collective Storyz 2021</span></a>
+                                <a href="https://sivanandhpp.github.io/"><span>© Collective Storyz 2021</span></a>
                             </div>
                         </div>
                     </div>
@@ -510,11 +456,26 @@
         </div>
     </div>
 
-    <script src="src/js/vendors.js"></script>
+    <aside class="cookies-notice">
+        <div id="y-intro-scroll">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                y="0px" viewBox="0 0 109.1 83.9" xml:space="preserve" id="drawIt">
+                <polyline class="st0" stroke-width="2" fill="none" stroke="white"
+                    points="0.5,34.5 0.5,34.5 0.5,49.4 80.2,49.4 46.2,83.4 67.2,83.4 98.1,52.5 108.6,42 98.1,31.5 67.2,0.5   46.2,0.5 80.2,34.5 0.5,34.5 ">
+                </polyline>
+            </svg>
+        </div>
+        <p>This website scroll Horizontally</p>
+
+        <button class="cookies-notice__close-btn cursor-active">
+            <span class="hidden">close</span>
+        </button>
+    </aside>
+
+ 
     <script src="src/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="src/js/cursor.js"></script>
+
 </body>
 
 </html>

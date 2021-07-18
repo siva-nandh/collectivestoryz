@@ -1,45 +1,34 @@
-var cursor = $(".custom-cursor"),
-  follower = $(".cursor-follower");
+var cursor = document.querySelector(".custom-cursor");
+var cursorr = $(".custom-cursor");
 
+document.addEventListener("mousemove", function (e) {
+  cursor.style.cssText = "left: " + (e.clientX - 35) + "px; top: " + (e.clientY - 45) + "px;";
 
-var posX = 0,
-  posY = 0,
-  mouseX = 0,
-  mouseY = 0;
+  $(".cursor-active").on("mouseenter", function () {
+    cursorr.addClass("active");
+  });
 
-TweenMax.to({}, 0.016, {
-  repeat: -1,
-  onRepeat: function () {
-    posX += (mouseX - posX) / 9;
-    posY += (mouseY - posY) / 9;
-
-    TweenMax.set(follower, {
-      css: {
-        left: posX - 20,
-        top: posY - 20
-      }
-    });
-
-    TweenMax.set(cursor, {
-      css: {
-        left: mouseX - 25,
-        top: mouseY - 35
-      }
-    });
-  }
+  $(".cursor-active").on("mouseleave", function () {
+    cursorr.removeClass("active");
+  });
 });
 
-$(document).on("mousemove", function (e) {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-});
 
-$(".cursor-active").on("mouseenter", function () {
-  cursor.addClass("active");
-  follower.addClass("active");
-});
 
-$(".cursor-active").on("mouseleave", function () {
-  cursor.removeClass("active");
-  follower.removeClass("active");
+
+let video = document.getElementById('projVideo');
+let isPaused = false;
+let observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio != 1 && !video.paused) {
+      video.pause();
+      isPaused = true;
+    }
+    // else if(isPaused) {
+    //     video.play(); 
+    //     isPaused=false}
+  });
+}, {
+  threshold: 1
 });
+observer.observe(video);

@@ -3,7 +3,7 @@
 
 
 <head>
-    <title>Wroks | Collective Storyz</title>
+    <title>Works | Collective Storyz</title>
     <link rel="icon" href="src/img/logo.png" sizes="32x32">
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="src/css/cursor.css" />
 
     <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="src/js/vendors.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -36,7 +37,7 @@
 
 <body>
     <div class="custom-cursor"></div>
-    <div class="cursor-follower"></div>
+    
     <div class="preload-help"></div>
     <div class="preload-container"></div>
     <div class="preload-container">
@@ -50,7 +51,7 @@
             <img src="src/img/logo.png" alt="Collective Storyz" title="Collective Storyz">
         </div>
     </div>
-    <button class="theme-switch cursor-active nop" data-mode="dark">
+    <button class="theme-switch cursor-active " data-mode="dark">
         <span class="visually-hidden">Change theme</span>
 
         <span class="track">
@@ -68,7 +69,7 @@
         <div class="MenuOverlayBackground"></div>
         <div class="nav-container">
             <div class="header-menu menu-icon">
-                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button cursor-active nop"
+                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button cursor-active "
                     id="closeNavbar">
                     <div class="cross">
                         <div class="cross-in left"></div>
@@ -81,7 +82,7 @@
                 </div>
             </div>
             <nav class="nav-container-left">
-                <div class="header-menu logo desktop-only cursor-active nop">
+                <div class="header-menu logo desktop-only cursor-active ">
                     <a href="index.html"><img src="src/img/logo.png" alt="Collective-Storyz"
                             title="Collective-Storyz" /></a>
                 </div>
@@ -93,7 +94,7 @@
                         <a id="works" data-img="" href="works.html">WORK</a>
                     </li>
                     <li class="onActive wow fadeInLeft" data-wow-delay="1.4s">
-                        <a id="about" data-img="" href="about.html">KNOW US</a>
+                        <a id="about" data-img="" href="know-us.html">KNOW US</a>
                     </li>
                     <li class="onActive wow fadeInLeft" data-wow-delay="1.6s">
                         <a id="team" data-img="" href="team.html">TEAM</a>
@@ -133,10 +134,10 @@
                     <p class="emailMenu"><span>Say Hi!</span></p>
                     <ul>
                         <li>
-                            <a class="emailId cursor-active nop"
+                            <a class="emailId cursor-active "
                                 href="mailto:contact@collectivestoryz.in">contact@collectivestoryz.in</a>
                             <br>
-                            <a class="emailId cursor-active nop" href="tel:+919876543210">+91 9876543210</a>
+                            <a class="emailId cursor-active " href="tel:+919876543210">+91 9876543210</a>
                         </li>
                     </ul>
                 </div>
@@ -149,7 +150,7 @@
         <section class="panel banner leftMenu">
             <div class="left-header">
                 <div class="header-section hspadding logo">
-                    <a href="index.html" class="scrollToFirst cursor-active nop"><img src="src/img/logo.png"
+                    <a href="index.html" class="scrollToFirst cursor-active "><img src="src/img/logo.png"
                             alt="Collective Storyz" title="Collective Storyz" /></a>
                 </div>
                 <div class="header-section menu-icon">
@@ -160,7 +161,7 @@
                 <div class="header-section header-quote">
                     <img src="src/img/ui/play-button.png" width="20" />
                     <p>
-                        <a href="javascript:void(0);" class="scrollToContact cursor-active nop"><span>Let’s
+                        <a href="javascript:void(0);" class="scrollToContact cursor-active "><span>Let’s
                             </span><span>do good
                             </span><span>together!</span></a>
                     </p>
@@ -190,7 +191,10 @@
                                                         <article class="tile | js-tile">
                                                             <a href="recycle-kerala.html">
                                                                 <figure class="tile__fig">
-                                                                    <img src="src/proj/recyclekeralacoverp.png" data-hover="" alt="Rrecycle-Kerala" class="tile__img" />
+                                                                    <img src="src/proj/recyclekeralacoverp.webp"
+                                                                    onerror=this.src="src/proj/recyclekeralacoverp.jpg"
+                                                                    data-hover="" alt="Recycle Kerala"
+                                                                    class="tile__img" />
                                                                 </figure>
                                                                 <div class="tile__content">
                                                                     <div class="tile__cta">
@@ -207,7 +211,9 @@
                                                         <article class="tile | js-tile">
                                                             <a href="hridayapoorvam.html">
                                                                 <figure class="tile__fig">
-                                                                    <img src="src/proj/hridayapoorvamcoverp.png" data-hover="" alt="Hridayapoorvam" class="tile__img" />
+                                                                    <img src="src/proj/hridayapoorvamcoverp.webp"
+                                                                    onerror=this.src="src/proj/hridayapoorvamcoverp.jpg"
+                                                                    data-hover="" alt="" class="tile__img" />
                                                                 </figure>
                                                                 <div class="tile__content">
                                                                     <div class="tile__cta">
@@ -404,7 +410,7 @@
                         </section>
                         <div class="contactUs mobile-only">
                             <div class="copyrights">
-                                <a href="about.html"><span>© Collective Storyz 2021</span></a>
+                                <a href="know-us.html"><span>© Collective Storyz 2021</span></a>
                             </div>
                         </div>
                     </div>
@@ -412,9 +418,19 @@
             </div>
         </div>
     </div>
+    <aside class="cookies-notice">
+        <div id="y-intro-scroll">
+           <img src="src/img/ui/bluearroww.png" alt="Blue png arrow">
+        </div>
+        <p>This website scroll Horizontally</p>
+
+        <button class="cookies-notice__close-btn">
+            <span class="hidden">close</span>
+        </button>
+    </aside>
+
+ 
     <script src="src/js/app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="src/js/cursor.js"></script>
 </body>
 
