@@ -730,7 +730,7 @@ hr {
   content: "";
   width: 35px;
   height: 35px;
-  background-image: url(/src/img/ui/smallplay.png);
+  background-image: url(/assets/ui/smallplay.png);
   display: block;
   position: absolute;
   top: 0;
@@ -884,7 +884,7 @@ hr {
   width: 19px;
   display: block;
   position: absolute;
-  background: url(/src/img/ui/header-play-icon.png);
+  background: url(/assets/ui/header-play-icon.png);
   left: -30px;
   top: 7px;
   background-repeat: no-repeat;
@@ -1253,7 +1253,7 @@ hr {
   position: absolute;
   width: 100%;
   height: 275px;
-  background-image: url(/src/img/ui/line.png);
+  background-image: url(/assets/ui/line.png);
   bottom: -20%;
   left: 0;
   background-position: -500px 0px;
@@ -1272,7 +1272,7 @@ hr {
   position: absolute;
   width: 99%;
   height: 275px;
-  background-image: url(/src/img/ui/line.png);
+  background-image: url(/assets/ui/line.png);
   bottom: 13%;
   left: 0;
   background-position: -500px 0px;
@@ -1375,15 +1375,27 @@ hr {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-top: 10vh;
+  padding-top: 25vh;
 }
 
 .slideshow-list__el {
   width: 100%;
   min-width: 261px;
   /* max-width: 35vw; */
-  margin-left: 7vw;
+  margin-left: 100px;
+  margin-right: 100px;
 }
+
+.slideshow-list__seemore{
+  width: 100%;
+  min-width: 261px;
+  /* max-width: 35vw; */
+  margin-left: 7vw;
+  margin-bottom: 60px;
+  margin-right: 100px;
+}
+
+/* This making irregular allighments
 
 .slideshow-list .slideshow-list__el:nth-child(odd) {
   transform: translateY(9vh);
@@ -1391,7 +1403,7 @@ hr {
 
 .slideshow-list .slideshow-list__el:nth-child(even) {
   transform: translateY(-1vh);
-}
+} */
 
 .tile {
   position: relative;
@@ -1405,7 +1417,7 @@ hr {
 .tile__fig::before {
   content: "";
   display: block;
-  padding-top: 136.36%;
+  padding-top: 93%;
 }
 
 .tile__img {
@@ -1413,8 +1425,21 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 160%;
+ 
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  transition: opacity 0.3s;
+}
+
+.tile__seemore{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
@@ -1645,7 +1670,7 @@ hr {
   border: 1px solid rgba(37, 37, 37, 0.4);
   background-color: rgba(9, 6, 13, 0.4);
   border-radius: 50px;
-  background-image: url(/src/img/ui/arrow.png);
+  background-image: url(/assets/ui/arrow.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 30px;
@@ -2173,7 +2198,7 @@ hr {
 
 .teamdec::before {
   content: "";
-  background-image: url(/src/img/ui/Path-20.png);
+  background-image: url(/assets/ui/Path-20.png);
   position: absolute;
   width: 548px;
   height: 545px;
@@ -2186,7 +2211,7 @@ hr {
 
 .teamdec2::before {
   content: "";
-  background-image: url(/src/img/ui/Path-18.png);
+  background-image: url(/assets/ui/Path-18.png);
   position: absolute;
   width: 986px;
   height: 441px;
@@ -2199,7 +2224,7 @@ hr {
 
 .teamdec3::before {
   content: "";
-  background-image: url(/src/img/ui/Path-20.png);
+  background-image: url(/assets/ui/Path-20.png);
   position: absolute;
   width: 548px;
   height: 545px;
@@ -2664,7 +2689,7 @@ hr {
 
 .ourStrength_blk:before {
   content: "";
-  background-image: url(/src/img/ui/Path-18.png);
+  background-image: url(/assets/ui/Path-18.png);
   position: absolute;
   width: 986px;
   height: 441px;
@@ -2677,7 +2702,7 @@ hr {
 
 .ourStrength_blk:after {
   content: "";
-  background-image: url(/src/img/ui/Path-20.png);
+  background-image: url(/assets/ui/Path-20.png);
   position: absolute;
   width: 650px;
   height: 441px;
@@ -2706,7 +2731,7 @@ hr {
 
 .services_blk:before {
   content: "";
-  background-image: url(/src/img/ui/Path-18.png);
+  background-image: url(/assets/ui/Path-18.png);
   position: absolute;
   width: 1092px;
   height: 488px;
@@ -2719,7 +2744,7 @@ hr {
 
 /* .services_blk:after {
   content: "";
-  background-image: url(/src/img/ui/Path-20.png);
+  background-image: url(/assets/ui/Path-20.png);
   position: absolute;
   width: 548px;
   height: 545px;
@@ -3036,7 +3061,7 @@ hr {
 
 .abtcontactUs.contactUs:after {
   content: "";
-  background-image: url(/src/img/ui/Path-18.png);
+  background-image: url(/assets/ui/Path-18.png);
   position: absolute;
   width: 986px;
   height: 441px;
@@ -3516,7 +3541,10 @@ hr {
     line-height: 55px;
     font-size: 60px;
   }
-
+  .gmap{
+    width: 100vw;
+  }
+/* 
   .contactUs h2 {
     line-height: 55px;
     font-size: 60px;
@@ -3539,7 +3567,7 @@ hr {
   .contactDetails {
     padding-top: 0;
     padding-bottom: 0;
-  }
+  } */
 
   #ourLatest {
     top: 2rem;
@@ -3958,8 +3986,8 @@ hr {
 
   .slideshow-list__el .tile__fig img {
     position: static;
-    height: 354px;
-    width: auto;
+    height: 50vw;
+    width: 90vw;
     display: inline-block;
   }
 
@@ -3970,6 +3998,20 @@ hr {
   .slideshow-list__el .tile__content {
     text-align: center;
     margin-bottom: 40px;
+  }
+
+  .slideshow-list{
+    padding-top: 30px;
+  }
+
+  .tile__seemore{
+    padding-right: 10vw;
+    width: 90vw;
+    height: 20vw;
+  }
+
+  .tile__fig::before {
+    padding-top: 10vw;
   }
 
   .article_inner ul {
@@ -4848,9 +4890,10 @@ hr {
 
 @media(max-width: 420px) {
 
-  .slideshow-list__el .tile__fig img{
+  /* .slideshow-list__el .tile__fig img{
     width: 90vw;
-  }
+    height: 180px;
+  } */
 
   .introMainContent h2 div {
     font-size: 30px;
