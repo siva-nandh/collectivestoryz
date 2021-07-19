@@ -1070,7 +1070,7 @@ hr {
 }
 
 .introContent {
-  width: 90vw;
+  width: calc(100vw - 124px);
   background-color: rgba(0, 0, 0, 0.63);
   padding: 45px 100px;
   position: relative;
