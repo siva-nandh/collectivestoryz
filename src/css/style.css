@@ -1375,14 +1375,14 @@ hr {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-top: 10vh;
+  padding-top: 25vh;
 }
 
 .slideshow-list__el {
   width: 100%;
   min-width: 261px;
   /* max-width: 35vw; */
-  margin-left: 7vw;
+  margin-left: 100px;
   margin-right: 100px;
 }
 
@@ -3983,8 +3983,8 @@ hr {
 
   .slideshow-list__el .tile__fig img {
     position: static;
-    height: 354px;
-    width: auto;
+    height: 50vw;
+    width: 90vw;
     display: inline-block;
   }
 
@@ -4873,9 +4873,10 @@ hr {
 
 @media(max-width: 420px) {
 
-  .slideshow-list__el .tile__fig img{
+  /* .slideshow-list__el .tile__fig img{
     width: 90vw;
-  }
+    height: 180px;
+  } */
 
   .introMainContent h2 div {
     font-size: 30px;
