@@ -3541,7 +3541,10 @@ hr {
     line-height: 55px;
     font-size: 60px;
   }
-
+  .gmap{
+    width: 100vw;
+  }
+/* 
   .contactUs h2 {
     line-height: 55px;
     font-size: 60px;
@@ -3564,7 +3567,7 @@ hr {
   .contactDetails {
     padding-top: 0;
     padding-bottom: 0;
-  }
+  } */
 
   #ourLatest {
     top: 2rem;
@@ -3995,6 +3998,20 @@ hr {
   .slideshow-list__el .tile__content {
     text-align: center;
     margin-bottom: 40px;
+  }
+
+  .slideshow-list{
+    padding-top: 30px;
+  }
+
+  .tile__seemore{
+    padding-right: 10vw;
+    width: 90vw;
+    height: 20vw;
+  }
+
+  .tile__fig::before {
+    padding-top: 10vw;
   }
 
   .article_inner ul {
