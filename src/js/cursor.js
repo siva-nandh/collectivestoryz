@@ -11,24 +11,36 @@ document.addEventListener("mousemove", function (e) {
   $(".cursor-active").on("mouseleave", function () {
     cursorr.removeClass("active");
   });
+
 });
 
 
+// Give focus on the element to scroll seamlessly
+// after loading
+document.addEventListener('keydown', function (e) {
+  document.getElementById("scrolldiv").focus();
+});
 
 
-let video = document.getElementById('projVideo');
+// from here auto video pause starts
+
 let isPaused = false;
-let observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.intersectionRatio != 1 && !video.paused) {
-      video.pause();
-      isPaused = true;
-    }
-    // else if(isPaused) {
-    //     video.play(); 
-    //     isPaused=false}
+document.addEventListener('scroll', function(e) {
+
+  let video = document.getElementById('projVideo');
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio != 1 && !video.paused) {
+        video.pause();
+        isPaused = true;
+      }
+      // else if(isPaused) {
+      //     video.play(); 
+      //     isPaused=false}
+    });
+  }, {
+    threshold: 1
   });
-}, {
-  threshold: 1
+  observer.observe(video);
+  
 });
-observer.observe(video);

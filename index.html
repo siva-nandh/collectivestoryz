@@ -69,7 +69,7 @@
         <div class="MenuOverlayBackground"></div>
         <div class="nav-container">
             <div class="header-menu menu-icon">
-                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button cursor-active "
+                <button data-wow-delay="3s" class="onActive wow fadeInLeft menu-open_button cursor-active"
                     id="closeNavbar">
                     <div class="cross">
                         <div class="cross-in left"></div>
@@ -82,7 +82,7 @@
                 </div>
             </div>
             <nav class="nav-container-left">
-                <div class="header-menu logo desktop-only cursor-active ">
+                <div class="header-menu logo desktop-only cursor-active">
                     <a href="index.html"><img src="assets/logo.png" alt="Collective-Storyz"
                             title="Collective-Storyz" /></a>
                 </div>
@@ -148,7 +148,7 @@
     <div id="page-wrapper">
         <!-- Header -->
         <section class="panel banner leftMenu">
-            <div class="left-header">
+            <div class="left-header start-scrolling">
                 <div class="header-section hspadding logo">
                     <a href="index.html" class="scrollToFirst cursor-active "><img src="assets/logo.png"
                             alt="Collective Storyz" title="Collective Storyz" /></a>
@@ -177,7 +177,7 @@
             <div data-router-view="home" class="home_page">
                 <canvas id="scene"></canvas>
                 <!-- scroll section -->
-                <div class="scroll-area">
+                <div class="scroll-area" id="scrolldiv" tabindex=0>
                     <!-- container for all horizontal scroll items -->
                     <div class="scroll-wrapper">
                         <section class="panel introSection" id="first">
@@ -244,7 +244,6 @@
                                                             <a class="cursor-active " href="proj-recyclekerala.html">
                                                                 <figure class="tile__fig">
                                                                     <img src="projects/recyclekerala/recyclekerala.jpg"
-                                                                        
                                                                         data-hover="" alt="Recycle Kerala"
                                                                         class="tile__img" />
                                                                 </figure>
@@ -264,7 +263,6 @@
                                                             <a class="cursor-active " href="/proj-hridayapoorvam.html">
                                                                 <figure class="tile__fig">
                                                                     <img src="projects/hridayapoorvam/hridayapoorvam.jpg"
-                                                                        
                                                                         data-hover="" alt="Hridayapoorvam"
                                                                         class="tile__img" />
                                                                 </figure>
@@ -279,7 +277,7 @@
                                                             </a>
                                                         </article>
                                                     </li>
-                                                    
+
                                                     <li class="slideshow-list__seemore">
                                                         <article class="tile | js-tile">
                                                             <a class="cursor-active " href="ourworks.html">
@@ -308,8 +306,7 @@
                                     <div class="articlesBlk_inner">
                                         <div class="shapeBlk">
                                             <img src="assets/ui/angle-shape.png" class="img-fluid desktop-only" />
-                                            <img src="assets/ui/angle-shape-mobile.png"
-                                                class="img-fluid mobile-only" />
+                                            <img src="assets/ui/angle-shape-mobile.png" class="img-fluid mobile-only" />
                                         </div>
                                         <div class="article_inner">
                                             <ul>
@@ -319,8 +316,8 @@
                                                     <h5>KNOW US</h5>
                                                     <h4>
                                                         <span>
-                                                            <a class="cairo cursor-active "
-                                                                href="knowus.html">“Create with
+                                                            <a class="cairo cursor-active " href="knowus.html">“Create
+                                                                with
                                                                 the heart build with the mind”</a>
                                                         </span>
 
@@ -337,8 +334,7 @@
                                                     <h5>FOUNDERS</h5>
                                                     <h4>
                                                         <span>
-                                                            <a class="cairo cursor-active "
-                                                                href="founders.html">“Great
+                                                            <a class="cairo cursor-active " href="founders.html">“Great
                                                                 stories happen to those who can tell them”</a>
                                                         </span>
 
@@ -387,8 +383,8 @@
                                                                 title="Facebook"></a>
                                                         <a target="_blank" class="cursor-active "
                                                             href="https://www.instagram.com/collective_storyz/"><img
-                                                                src="assets/ui/socialicons/instagram.svg" alt="Instagram"
-                                                                title="Instagram"></a>
+                                                                src="assets/ui/socialicons/instagram.svg"
+                                                                alt="Instagram" title="Instagram"></a>
                                                         <a target="_blank" class="cursor-active "
                                                             href="https://www.linkedin.com/in/collectivestoryz/"><img
                                                                 src="assets/ui/socialicons/linkedin.svg" alt="LinkedIn"
@@ -472,10 +468,9 @@
         </button>
     </aside>
 
- 
+
     <script src="src/js/app.js"></script>
     <script src="src/js/cursor.js"></script>
-
 </body>
 
 </html>

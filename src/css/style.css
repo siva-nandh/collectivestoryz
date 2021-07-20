@@ -1057,6 +1057,7 @@ hr {
   transition: background-color 0.3s ease;
 }
 
+
 [data-theme=light] .scroll-area {
   background-color: #fafef5;
 }
