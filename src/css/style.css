@@ -1299,7 +1299,7 @@ hr {
 #portfolioWrap {
   /* padding-left: 200px; */
   height: 100vh;
-  padding-right: 150px;
+  /* padding-right: 150px; */
   position: relative;
   z-index: 9;
 }
