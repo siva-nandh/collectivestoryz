@@ -1528,7 +1528,7 @@ hr {
 }
 
 .articlesBlk_wrap {
-  padding-left: 100px;
+  /* padding-left: 100px; */
   overflow: hidden;
   position: relative;
 }
