@@ -1297,7 +1297,7 @@ hr {
 }
 
 #portfolioWrap {
-  padding-left: 200px;
+  /* padding-left: 200px; */
   height: 100vh;
   padding-right: 150px;
   position: relative;
