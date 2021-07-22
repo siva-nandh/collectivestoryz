@@ -23,24 +23,35 @@ document.addEventListener('keydown', function (e) {
 
 
 // from here auto video pause starts
-
-let isPaused = false;
-document.addEventListener('scroll', function(e) {
-
-  let video = document.getElementById('projVideo');
-  let observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.intersectionRatio != 1 && !video.paused) {
-        video.pause();
-        isPaused = true;
-      }
-      // else if(isPaused) {
-      //     video.play(); 
-      //     isPaused=false}
+function autoplaypause() {
+  console.log('Video will be paused if it is not fully visible')
+    let video = document.getElementById('projVideo');
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio != 1 && !video.paused) {
+          video.pause();
+          isPaused = true;
+        }
+        // else if(isPaused) {
+        //     video.play(); 
+        //     isPaused=false}
+      });
+    }, {
+      threshold: 1
     });
-  }, {
-    threshold: 1
-  });
-  observer.observe(video);
-  
-});
+    observer.observe(video);
+}
+
+
+// function showcookiesnotice() {
+//   console.log("working")
+//   $(".cookies-notice").show()
+//   $(".cookies-notice").removeClass("is-closed");
+
+//   // var n = window.localStorage.getItem("cPop");
+//   // console.log(t), "hide" === n && e(".cookies-notice").remove(), e(".cookies-notice__close-btn").click(function (t) {
+//   //     e(".cookies-notice").addClass("is-closed"), setTimeout(function () {
+//   //         e(".cookies-notice").remove()
+//   //     }, 700), window.localStorage.setItem("cPop", "hide")
+//   // })
+// }
