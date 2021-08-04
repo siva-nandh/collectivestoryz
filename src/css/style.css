@@ -2559,9 +2559,11 @@ hr {
 }
 
 .abtintroblk_wrap p {
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   opacity: 0.6;
   font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
   line-height: 30px;
   font-family: "Cairo";
   font-weight: 400;
@@ -2663,9 +2665,11 @@ hr {
 }
 
 .ourStrength p {
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   font-size: 20px;
   line-height: 30px;
+  text-align: justify;
+  text-justify: inter-word;
   font-family: "Cairo";
   font-weight: 400;
 }
@@ -2837,11 +2841,13 @@ hr {
 }
 
 .services_blk_wrap ul li {
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
   color: #fff;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
+  text-align: justify;
+  text-justify: inter-word;
   font-family: "Cairo";
   margin-bottom: 0px;
   opacity: 0.60;
@@ -2891,6 +2897,8 @@ hr {
 .abtbehindNikaPro_wrap p {
   opacity: 0.6;
   font-size: 19px;
+  text-align: justify;
+  text-justify: inter-word;
   line-height: normal;
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 400;
